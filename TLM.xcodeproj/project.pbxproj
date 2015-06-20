@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E02A8BF1B2AA8D40012C8DC /* EditPlayerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02A8BE1B2AA8D40012C8DC /* EditPlayerTableViewController.swift */; };
 		4E85F2281B20FF670090741F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E85F2271B20FF670090741F /* AppDelegate.swift */; };
 		4E85F22A1B20FF670090741F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E85F2291B20FF670090741F /* ViewController.swift */; };
 		4E85F22D1B20FF670090741F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E85F22B1B20FF670090741F /* Main.storyboard */; };
 		4E85F22F1B20FF670090741F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E85F22E1B20FF670090741F /* Images.xcassets */; };
 		4E85F2321B20FF670090741F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E85F2301B20FF670090741F /* LaunchScreen.xib */; };
 		4E85F23E1B20FF670090741F /* TLMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E85F23D1B20FF670090741F /* TLMTests.swift */; };
+		4E945C4D1B228BBB002D1B09 /* WeekTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E945C4C1B228BBB002D1B09 /* WeekTableViewController.swift */; };
+		4E9D6A6F1B261DF900875E7A /* PlayerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9D6A6E1B261DF900875E7A /* PlayerTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E02A8BE1B2AA8D40012C8DC /* EditPlayerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPlayerTableViewController.swift; sourceTree = "<group>"; };
 		4E85F2221B20FF670090741F /* TLM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E85F2261B20FF670090741F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E85F2271B20FF670090741F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		4E85F2371B20FF670090741F /* TLMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TLMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E85F23C1B20FF670090741F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E85F23D1B20FF670090741F /* TLMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLMTests.swift; sourceTree = "<group>"; };
+		4E945C4C1B228BBB002D1B09 /* WeekTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekTableViewController.swift; sourceTree = "<group>"; };
+		4E9D6A6E1B261DF900875E7A /* PlayerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				4E85F2271B20FF670090741F /* AppDelegate.swift */,
-				4E85F2291B20FF670090741F /* ViewController.swift */,
 				4E85F22B1B20FF670090741F /* Main.storyboard */,
+				4E85F2291B20FF670090741F /* ViewController.swift */,
+				4E945C4C1B228BBB002D1B09 /* WeekTableViewController.swift */,
+				4E9D6A6E1B261DF900875E7A /* PlayerTableViewController.swift */,
+				4E02A8BE1B2AA8D40012C8DC /* EditPlayerTableViewController.swift */,
 				4E85F22E1B20FF670090741F /* Images.xcassets */,
 				4E85F2301B20FF670090741F /* LaunchScreen.xib */,
 				4E85F2251B20FF670090741F /* Supporting Files */,
@@ -161,6 +170,7 @@
 				TargetAttributes = {
 					4E85F2211B20FF670090741F = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = A7VQ8984ET;
 					};
 					4E85F2361B20FF670090741F = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -214,6 +224,9 @@
 			files = (
 				4E85F22A1B20FF670090741F /* ViewController.swift in Sources */,
 				4E85F2281B20FF670090741F /* AppDelegate.swift in Sources */,
+				4E9D6A6F1B261DF900875E7A /* PlayerTableViewController.swift in Sources */,
+				4E945C4D1B228BBB002D1B09 /* WeekTableViewController.swift in Sources */,
+				4E02A8BF1B2AA8D40012C8DC /* EditPlayerTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +353,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TLM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -350,9 +365,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TLM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -409,6 +426,7 @@
 				4E85F2431B20FF670090741F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E85F2441B20FF670090741F /* Build configuration list for PBXNativeTarget "TLMTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +435,7 @@
 				4E85F2461B20FF670090741F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
