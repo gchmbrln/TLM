@@ -22,32 +22,32 @@ class ViewController: UIViewController {
 
 // Connect to Weekly Date Buttons
 
-  var allWeekButtons = [UIButton]()
+  var allWeekButtons = [DesignableButton]()
   
-  @IBOutlet weak var buttonW1: UIButton!
-  @IBOutlet weak var buttonW2: UIButton!
-  @IBOutlet weak var buttonW3: UIButton!
-  @IBOutlet weak var buttonW4: UIButton!
-  @IBOutlet weak var buttonW5: UIButton!
-  @IBOutlet weak var buttonW6: UIButton!
-  @IBOutlet weak var buttonW7: UIButton!
+  @IBOutlet weak var buttonW1: DesignableButton!
+  @IBOutlet weak var buttonW2: DesignableButton!
+  @IBOutlet weak var buttonW3: DesignableButton!
+  @IBOutlet weak var buttonW4: DesignableButton!
+  @IBOutlet weak var buttonW5: DesignableButton!
+  @IBOutlet weak var buttonW6: DesignableButton!
+  @IBOutlet weak var buttonW7: DesignableButton!
 
 // Connect to Player Buttons
 
-  var allPlayerButtons = [UIButton]()
+  var allPlayerButtons = [DesignableButton]()
 
-  @IBOutlet weak var buttonP1: UIButton!
-  @IBOutlet weak var buttonP2: UIButton!
-  @IBOutlet weak var buttonP3: UIButton!
-  @IBOutlet weak var buttonP4: UIButton!
-  @IBOutlet weak var buttonP5: UIButton!
-  @IBOutlet weak var buttonP6: UIButton!
-  @IBOutlet weak var buttonP7: UIButton!
-  @IBOutlet weak var buttonP8: UIButton!
-  @IBOutlet weak var buttonP9: UIButton!
-  @IBOutlet weak var buttonP10: UIButton!
-  @IBOutlet weak var buttonP11: UIButton!
-  @IBOutlet weak var buttonP12: UIButton!
+  @IBOutlet weak var buttonP1: DesignableButton!
+  @IBOutlet weak var buttonP2: DesignableButton!
+  @IBOutlet weak var buttonP3: DesignableButton!
+  @IBOutlet weak var buttonP4: DesignableButton!
+  @IBOutlet weak var buttonP5: DesignableButton!
+  @IBOutlet weak var buttonP6: DesignableButton!
+  @IBOutlet weak var buttonP7: DesignableButton!
+  @IBOutlet weak var buttonP8: DesignableButton!
+  @IBOutlet weak var buttonP9: DesignableButton!
+  @IBOutlet weak var buttonP10: DesignableButton!
+  @IBOutlet weak var buttonP11: DesignableButton!
+  @IBOutlet weak var buttonP12: DesignableButton!
 
 // Define Some Variables
 
@@ -156,8 +156,8 @@ class ViewController: UIViewController {
     
     for button in allWeekButtons {
       button.setTitle(weekDateData[button.tag], forState: UIControlState.Normal)
-      button.layer.cornerRadius = 15
-      button.layer.borderWidth = 1
+//      button.layer.cornerRadius = 15
+//      button.layer.borderWidth = 1
     }
     
     // create player button array and change titles to players names
@@ -170,8 +170,8 @@ class ViewController: UIViewController {
 //    var newTitle = "\(playerDrawOrder[button.tag])" + " " + playersNamesData[button.tag]
 //    button.setTitle(newTitle, forState: UIControlState.Normal)
       button.setTitle(playersNamesData[button.tag], forState: UIControlState.Normal)
-      button.layer.cornerRadius = 15
-      button.layer.borderWidth = 1
+//      button.layer.cornerRadius = 15
+//      button.layer.borderWidth = 1
     }
     
     // create re-orderd player list based on player draw order
@@ -322,7 +322,7 @@ class ViewController: UIViewController {
 
   }
 
-  @IBAction func playerButtonTapped(sender: UIButton) {
+  @IBAction func playerButtonTapped(sender: DesignableButton) {
 
     playerSelected = sender.tag
     performSegueWithIdentifier("showPlayerSegue", sender: self)
