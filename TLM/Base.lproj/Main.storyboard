@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Tennis League Match Lineups-->
+        <!--Tennis League Match-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TLM" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,22 +18,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgV-zR-JI5" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
-                                <rect key="frame" x="131" y="88" width="112" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgV-zR-JI5" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
+                                <rect key="frame" x="131" y="88" width="120" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="LRJ-4A-WFD"/>
-                                    <constraint firstAttribute="width" constant="112" id="SJz-7u-usy"/>
+                                    <constraint firstAttribute="width" constant="125" id="SJz-7u-usy"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="13"/>
                                 <state key="normal" title="Weekly Matches">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.098039217293262482" green="0.098039217293262482" blue="0.098039217293262482" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="3"/>
+                                        <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="7"/>
@@ -118,7 +120,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gU2-HA-3IA" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
-                                <rect key="frame" x="254" y="142" width="75" height="30"/>
+                                <rect key="frame" x="240" y="142" width="75" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GgZ-X0-6dQ"/>
                                     <constraint firstAttribute="width" constant="75" id="MRN-Qp-TfQ"/>
@@ -154,7 +156,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBQ-6s-AtP" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
-                                <rect key="frame" x="16" y="194" width="75" height="30"/>
+                                <rect key="frame" x="21" y="194" width="75" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="glg-YJ-WIH"/>
                                     <constraint firstAttribute="width" constant="75" id="lS7-De-cIr"/>
@@ -189,7 +191,7 @@
                                     <action selector="weekButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="O5U-TY-Sbh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckr-y7-sgD" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckr-y7-sgD" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
                                 <rect key="frame" x="194" y="194" width="75" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="RAl-b5-N8u"/>
@@ -225,7 +227,7 @@
                                     <action selector="weekButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fIX-uG-UnV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhK-c4-Ybb" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhK-c4-Ybb" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
                                 <rect key="frame" x="106" y="194" width="75" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="295-xG-LuJ"/>
@@ -261,58 +263,24 @@
                                     <action selector="weekButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="H62-0Y-MXZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyX-7v-vXd" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
-                                <rect key="frame" x="284" y="194" width="75" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jc-j4-K1R" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
+                                <rect key="frame" x="131" y="254" width="126" height="30"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="OEq-nv-hn0"/>
-                                    <constraint firstAttribute="height" constant="30" id="zu3-GD-4vy"/>
+                                    <constraint firstAttribute="width" constant="125" id="PAS-0r-qqh"/>
+                                    <constraint firstAttribute="height" constant="30" id="g4y-dJ-sxY"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
-                                <state key="normal" title="Week7">
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="13"/>
+                                <state key="normal" title="League Players">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInDown"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                        <real key="value" value="0.25"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="0.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="272" y="197" width="75" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="weekButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="x4o-Gj-Ruk"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jc-j4-K1R" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
-                                <rect key="frame" x="131" y="254" width="112" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="112" id="PAS-0r-qqh"/>
-                                    <constraint firstAttribute="height" constant="30" id="g4y-dJ-sxY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="13"/>
-                                <state key="normal" title="League Players">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="7"/>
@@ -328,7 +296,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuG-XE-Dk0" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
-                                <rect key="frame" x="16" y="310" width="160" height="30"/>
+                                <rect key="frame" x="21" y="310" width="160" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="7Fm-fD-W25"/>
                                     <constraint firstAttribute="width" constant="160" id="xdk-sB-rSB"/>
@@ -364,7 +332,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvE-Nd-zpX" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
-                                <rect key="frame" x="199" y="310" width="160" height="30"/>
+                                <rect key="frame" x="194" y="310" width="160" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="UX8-Rf-QFk"/>
                                     <constraint firstAttribute="height" constant="30" id="kqM-li-RQV"/>
@@ -400,7 +368,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asX-AW-G3F" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
-                                <rect key="frame" x="16" y="370" width="160" height="30"/>
+                                <rect key="frame" x="21" y="370" width="160" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="Ayz-t3-0vb"/>
                                     <constraint firstAttribute="height" constant="30" id="CPr-Lh-I1K"/>
@@ -436,7 +404,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Av1-Zg-EwB" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
-                                <rect key="frame" x="199" y="370" width="160" height="30"/>
+                                <rect key="frame" x="194" y="370" width="160" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="9FD-uR-on3"/>
                                     <constraint firstAttribute="height" constant="30" id="tai-uB-xdS"/>
@@ -472,7 +440,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXC-mv-GSZ" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
-                                <rect key="frame" x="16" y="430" width="160" height="30"/>
+                                <rect key="frame" x="21" y="430" width="160" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="PD9-qC-cKb"/>
                                     <constraint firstAttribute="height" constant="30" id="o7Y-Ff-QG2"/>
@@ -508,7 +476,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkC-KQ-tWg" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
-                                <rect key="frame" x="199" y="430" width="160" height="30"/>
+                                <rect key="frame" x="194" y="430" width="160" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="A7g-HV-b7M"/>
                                     <constraint firstAttribute="height" constant="30" id="ar3-Yl-xns"/>
@@ -544,7 +512,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWh-ML-cP9" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
-                                <rect key="frame" x="16" y="490" width="160" height="30"/>
+                                <rect key="frame" x="21" y="490" width="160" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="TW9-jv-SXR"/>
                                     <constraint firstAttribute="height" constant="30" id="vwi-4E-Rfm"/>
@@ -580,7 +548,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufX-gV-e77" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
-                                <rect key="frame" x="199" y="490" width="160" height="30"/>
+                                <rect key="frame" x="194" y="490" width="160" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="5Xg-Za-uS7"/>
                                     <constraint firstAttribute="height" constant="30" id="fu2-ND-iZv"/>
@@ -616,7 +584,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJ6-gU-w4o" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
-                                <rect key="frame" x="16" y="550" width="160" height="30"/>
+                                <rect key="frame" x="21" y="550" width="160" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="B3j-oP-q2g"/>
                                     <constraint firstAttribute="width" constant="160" id="dr2-dg-IUf"/>
@@ -652,7 +620,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKm-A5-anz" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
-                                <rect key="frame" x="199" y="550" width="160" height="30"/>
+                                <rect key="frame" x="194" y="550" width="160" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="NbL-sO-bdp"/>
                                     <constraint firstAttribute="width" constant="160" id="l3x-kb-9MH"/>
@@ -687,44 +655,8 @@
                                     <action selector="playerButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qPH-Ao-ChV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1v-Ic-KDA" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
-                                <rect key="frame" x="16" y="610" width="160" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="LHr-Ca-DQF"/>
-                                    <constraint firstAttribute="height" constant="30" id="dwB-fU-4gk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
-                                <state key="normal" title="Player11">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInRight"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                        <real key="value" value="0.45000000000000001"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="0.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="33" y="583" width="150" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="playerButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YkJ-u1-6dF"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EkG-jX-zB3" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
-                                <rect key="frame" x="199" y="610" width="160" height="30"/>
+                                <rect key="frame" x="194" y="610" width="160" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="fTt-7v-GOh"/>
                                     <constraint firstAttribute="width" constant="160" id="nbk-KN-h9Z"/>
@@ -759,9 +691,82 @@
                                     <action selector="playerButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="U5O-L8-ZDu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1v-Ic-KDA" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
+                                <rect key="frame" x="21" y="610" width="160" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="LHr-Ca-DQF"/>
+                                    <constraint firstAttribute="height" constant="30" id="dwB-fU-4gk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                                <state key="normal" title="Player11">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInRight"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.45000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="33" y="583" width="150" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="playerButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YkJ-u1-6dF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyX-7v-vXd" customClass="DesignableButton" customModule="TLM" customModuleProvider="target">
+                                <rect key="frame" x="279" y="194" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="OEq-nv-hn0"/>
+                                    <constraint firstAttribute="height" constant="30" id="zu3-GD-4vy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                                <state key="normal" title="Week7">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeInDown"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="272" y="197" width="75" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="weekButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="x4o-Gj-Ruk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="U1v-Ic-KDA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="0qI-Ge-1BL"/>
                             <constraint firstItem="Ceh-Xs-HYI" firstAttribute="top" secondItem="lgV-zR-JI5" secondAttribute="bottom" constant="24" id="18R-WT-6If"/>
                             <constraint firstItem="eKm-A5-anz" firstAttribute="top" secondItem="ufX-gV-e77" secondAttribute="bottom" constant="30" id="2Ep-Qs-YEn"/>
                             <constraint firstItem="HkC-KQ-tWg" firstAttribute="top" secondItem="Av1-Zg-EwB" secondAttribute="bottom" constant="30" id="51I-D2-gAe"/>
@@ -769,51 +774,78 @@
                             <constraint firstItem="MXC-mv-GSZ" firstAttribute="top" secondItem="asX-AW-G3F" secondAttribute="bottom" constant="30" id="6sC-HG-FzY"/>
                             <constraint firstItem="asX-AW-G3F" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="7vh-at-9DY"/>
                             <constraint firstItem="Av1-Zg-EwB" firstAttribute="top" secondItem="GvE-Nd-zpX" secondAttribute="bottom" constant="30" id="88P-3U-6yW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GvE-Nd-zpX" secondAttribute="trailing" constant="5" id="8Sy-0z-rKu"/>
+                            <constraint firstItem="gWh-ML-cP9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="9KC-s5-4RF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EkG-jX-zB3" secondAttribute="trailing" constant="5" id="9TZ-Nc-f5b"/>
+                            <constraint firstItem="MXC-mv-GSZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="APY-Pu-TW4"/>
                             <constraint firstItem="veT-UV-tM9" firstAttribute="top" secondItem="lgV-zR-JI5" secondAttribute="bottom" constant="24" id="Bpm-FQ-9YQ"/>
-                            <constraint firstItem="Ceh-Xs-HYI" firstAttribute="leading" secondItem="veT-UV-tM9" secondAttribute="trailing" constant="29" id="EIu-bL-095"/>
-                            <constraint firstItem="jhK-c4-Ybb" firstAttribute="leading" secondItem="dBQ-6s-AtP" secondAttribute="trailing" constant="15" id="G3N-eT-3RC"/>
+                            <constraint firstItem="Ceh-Xs-HYI" firstAttribute="leading" secondItem="veT-UV-tM9" secondAttribute="trailing" constant="15" id="EIu-bL-095"/>
+                            <constraint firstItem="jhK-c4-Ybb" firstAttribute="leading" secondItem="dBQ-6s-AtP" secondAttribute="trailing" constant="11" id="G3N-eT-3RC"/>
                             <constraint firstItem="ufX-gV-e77" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="GS5-Yq-jE3"/>
                             <constraint firstItem="gU2-HA-3IA" firstAttribute="top" secondItem="lgV-zR-JI5" secondAttribute="bottom" constant="24" id="IoN-QA-umr"/>
                             <constraint firstItem="GvE-Nd-zpX" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Iry-ah-OPb"/>
                             <constraint firstItem="MXC-mv-GSZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Jmy-mB-HpF"/>
+                            <constraint firstItem="dBQ-6s-AtP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="Jrd-8Q-Yt5"/>
                             <constraint firstItem="GvE-Nd-zpX" firstAttribute="top" secondItem="8jc-j4-K1R" secondAttribute="bottom" constant="26" id="JwI-Dy-HbI"/>
                             <constraint firstItem="dBQ-6s-AtP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="LWV-DV-IV8"/>
                             <constraint firstAttribute="centerX" secondItem="Ceh-Xs-HYI" secondAttribute="centerX" id="MhG-LV-w1I"/>
-                            <constraint firstItem="ZyX-7v-vXd" firstAttribute="leading" secondItem="ckr-y7-sgD" secondAttribute="trailing" constant="15" id="MwA-rL-YFz"/>
+                            <constraint firstItem="ZyX-7v-vXd" firstAttribute="leading" secondItem="ckr-y7-sgD" secondAttribute="trailing" constant="11" id="MwA-rL-YFz"/>
                             <constraint firstItem="ckr-y7-sgD" firstAttribute="top" secondItem="Ceh-Xs-HYI" secondAttribute="bottom" constant="22" id="NOc-Sd-97N"/>
+                            <constraint firstItem="HJ6-gU-w4o" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="OTB-1i-G9d"/>
                             <constraint firstItem="ZyX-7v-vXd" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Oec-EM-2RR"/>
                             <constraint firstItem="asX-AW-G3F" firstAttribute="top" secondItem="WuG-XE-Dk0" secondAttribute="bottom" constant="30" id="Pzx-f3-Z8u"/>
                             <constraint firstItem="8jc-j4-K1R" firstAttribute="top" secondItem="lgV-zR-JI5" secondAttribute="bottom" constant="136" id="RfT-kr-BwU"/>
                             <constraint firstItem="WuG-XE-Dk0" firstAttribute="top" secondItem="8jc-j4-K1R" secondAttribute="bottom" constant="26" id="RjJ-L8-Ihe"/>
+                            <constraint firstItem="WuG-XE-Dk0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="S8w-oa-Mh4"/>
                             <constraint firstItem="EkG-jX-zB3" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="U9V-aK-8ao"/>
                             <constraint firstItem="jhK-c4-Ybb" firstAttribute="top" secondItem="Ceh-Xs-HYI" secondAttribute="bottom" constant="22" id="VNp-30-Q8k"/>
                             <constraint firstItem="lgV-zR-JI5" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="24" id="VV9-E7-tcd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HkC-KQ-tWg" secondAttribute="trailing" constant="5" id="WsB-2H-2AH"/>
+                            <constraint firstItem="asX-AW-G3F" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="Wwz-tI-TXf"/>
                             <constraint firstItem="dBQ-6s-AtP" firstAttribute="top" secondItem="veT-UV-tM9" secondAttribute="bottom" constant="22" id="Yye-oz-zzV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZyX-7v-vXd" secondAttribute="trailing" constant="5" id="Zj5-RS-uCr"/>
                             <constraint firstItem="eKm-A5-anz" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="aMu-Ih-gfe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Av1-Zg-EwB" secondAttribute="trailing" constant="5" id="ckA-fe-xBA"/>
                             <constraint firstAttribute="centerX" secondItem="lgV-zR-JI5" secondAttribute="centerX" constant="0.5" id="d9j-Xw-QA7"/>
                             <constraint firstAttribute="centerX" secondItem="8jc-j4-K1R" secondAttribute="centerX" constant="0.5" id="e0Q-8W-Zd8"/>
                             <constraint firstItem="Av1-Zg-EwB" firstAttribute="top" secondItem="GvE-Nd-zpX" secondAttribute="bottom" constant="30" id="gY1-DE-Rtn"/>
                             <constraint firstItem="U1v-Ic-KDA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="iHE-f8-TUK"/>
                             <constraint firstItem="HJ6-gU-w4o" firstAttribute="top" secondItem="gWh-ML-cP9" secondAttribute="bottom" constant="30" id="lHB-nO-Uji"/>
                             <constraint firstItem="EkG-jX-zB3" firstAttribute="top" secondItem="eKm-A5-anz" secondAttribute="bottom" constant="30" id="mzN-Q4-26K"/>
-                            <constraint firstItem="gU2-HA-3IA" firstAttribute="leading" secondItem="Ceh-Xs-HYI" secondAttribute="trailing" constant="29" id="o14-g8-q4R"/>
+                            <constraint firstItem="gU2-HA-3IA" firstAttribute="leading" secondItem="Ceh-Xs-HYI" secondAttribute="trailing" constant="15" id="o14-g8-q4R"/>
                             <constraint firstItem="WuG-XE-Dk0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="p0P-Sx-HJQ"/>
                             <constraint firstItem="ckr-y7-sgD" firstAttribute="leading" secondItem="jhK-c4-Ybb" secondAttribute="trailing" constant="14" id="sCL-jc-CxI"/>
                             <constraint firstItem="U1v-Ic-KDA" firstAttribute="top" secondItem="HJ6-gU-w4o" secondAttribute="bottom" constant="30" id="sxn-tc-Cau"/>
                             <constraint firstItem="HJ6-gU-w4o" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="utm-Ag-Ygx"/>
                             <constraint firstItem="ZyX-7v-vXd" firstAttribute="top" secondItem="gU2-HA-3IA" secondAttribute="bottom" constant="22" id="v4l-SW-tUG"/>
                             <constraint firstItem="Av1-Zg-EwB" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="wWS-6u-4qd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eKm-A5-anz" secondAttribute="trailing" constant="5" id="wXK-1F-AZd"/>
                             <constraint firstItem="gWh-ML-cP9" firstAttribute="top" secondItem="MXC-mv-GSZ" secondAttribute="bottom" constant="30" id="wbb-Ag-BV0"/>
                             <constraint firstItem="HkC-KQ-tWg" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="wrC-2L-qgH"/>
                             <constraint firstItem="ufX-gV-e77" firstAttribute="top" secondItem="HkC-KQ-tWg" secondAttribute="bottom" constant="30" id="xCS-Ww-fT6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ufX-gV-e77" secondAttribute="trailing" constant="5" id="yeF-Aw-kR5"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="LWV-DV-IV8"/>
                                 <exclude reference="sCL-jc-CxI"/>
+                                <exclude reference="p0P-Sx-HJQ"/>
+                                <exclude reference="Oec-EM-2RR"/>
+                                <exclude reference="Iry-ah-OPb"/>
+                                <exclude reference="7vh-at-9DY"/>
+                                <exclude reference="wWS-6u-4qd"/>
+                                <exclude reference="Jmy-mB-HpF"/>
+                                <exclude reference="wrC-2L-qgH"/>
+                                <exclude reference="5e8-Ws-RRf"/>
+                                <exclude reference="GS5-Yq-jE3"/>
+                                <exclude reference="utm-Ag-Ygx"/>
+                                <exclude reference="aMu-Ih-gfe"/>
+                                <exclude reference="iHE-f8-TUK"/>
+                                <exclude reference="U9V-aK-8ao"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Tennis League Match Lineups" id="ztH-MZ-MkH"/>
+                    <navigationItem key="navigationItem" title="Tennis League Match" id="ztH-MZ-MkH"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -1178,8 +1210,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgY-IE-Nrb">
-                                                    <rect key="frame" x="27" y="14" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <rect key="frame" x="20" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="widthClass=compact" misplaced="YES">
@@ -1188,47 +1220,9 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="centerY" secondItem="wgY-IE-Nrb" secondAttribute="centerY" id="5a7-7g-P8p"/>
-                                                <constraint firstAttribute="centerY" secondItem="wgY-IE-Nrb" secondAttribute="centerY" id="Bum-Lw-5Ff"/>
-                                                <constraint firstAttribute="centerY" secondItem="wgY-IE-Nrb" secondAttribute="centerY" constant="-2.75" id="Gn2-Cj-B1U"/>
-                                                <constraint firstItem="wgY-IE-Nrb" firstAttribute="leading" secondItem="nPM-MO-lHe" secondAttribute="leadingMargin" constant="158" id="Nlt-wW-CTF"/>
-                                                <constraint firstItem="wgY-IE-Nrb" firstAttribute="leading" secondItem="nPM-MO-lHe" secondAttribute="leadingMargin" constant="19" id="Oz4-fs-Ji2"/>
-                                                <constraint firstItem="wgY-IE-Nrb" firstAttribute="leading" secondItem="nPM-MO-lHe" secondAttribute="leadingMargin" constant="30" id="T17-d8-KgI">
-                                                    <variation key="widthClass=compact" constant="10"/>
-                                                </constraint>
-                                                <constraint firstItem="wgY-IE-Nrb" firstAttribute="leading" secondItem="nPM-MO-lHe" secondAttribute="leadingMargin" constant="32" id="Wvs-l3-04M"/>
-                                                <constraint firstAttribute="centerX" secondItem="wgY-IE-Nrb" secondAttribute="centerX" id="cdU-4y-BlB"/>
-                                                <constraint firstAttribute="centerY" secondItem="wgY-IE-Nrb" secondAttribute="centerY" constant="3.5" id="fC6-0i-qfq"/>
-                                                <constraint firstAttribute="centerY" secondItem="wgY-IE-Nrb" secondAttribute="centerY" constant="3.5" id="joO-iD-gbr">
-                                                    <variation key="widthClass=compact" constant="4"/>
-                                                </constraint>
+                                                <constraint firstItem="wgY-IE-Nrb" firstAttribute="leading" secondItem="nPM-MO-lHe" secondAttribute="leadingMargin" constant="11" id="3cm-FS-4ju"/>
+                                                <constraint firstAttribute="centerY" secondItem="wgY-IE-Nrb" secondAttribute="centerY" constant="0.25" id="Bgm-48-fDF"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="5a7-7g-P8p"/>
-                                                    <exclude reference="Bum-Lw-5Ff"/>
-                                                    <exclude reference="Nlt-wW-CTF"/>
-                                                    <exclude reference="T17-d8-KgI"/>
-                                                    <exclude reference="Wvs-l3-04M"/>
-                                                    <exclude reference="cdU-4y-BlB"/>
-                                                    <exclude reference="fC6-0i-qfq"/>
-                                                    <exclude reference="joO-iD-gbr"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="widthClass=compact">
-                                                <mask key="constraints">
-                                                    <exclude reference="5a7-7g-P8p"/>
-                                                    <exclude reference="Bum-Lw-5Ff"/>
-                                                    <exclude reference="Gn2-Cj-B1U"/>
-                                                    <exclude reference="Nlt-wW-CTF"/>
-                                                    <exclude reference="Oz4-fs-Ji2"/>
-                                                    <include reference="T17-d8-KgI"/>
-                                                    <exclude reference="Wvs-l3-04M"/>
-                                                    <exclude reference="cdU-4y-BlB"/>
-                                                    <exclude reference="fC6-0i-qfq"/>
-                                                    <include reference="joO-iD-gbr"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="wC2-5A-Lqv">
@@ -1236,9 +1230,9 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wC2-5A-Lqv" id="4w3-Ih-Kr4">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaE-42-rTG">
-                                                    <rect key="frame" x="29" y="11" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaE-42-rTG">
+                                                    <rect key="frame" x="20" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="widthClass=compact" misplaced="YES">
@@ -1247,31 +1241,9 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="centerY" secondItem="qaE-42-rTG" secondAttribute="centerY" constant="3.5" id="ONX-PE-6tc">
-                                                    <variation key="widthClass=compact" constant="4"/>
-                                                </constraint>
-                                                <constraint firstItem="qaE-42-rTG" firstAttribute="leading" secondItem="4w3-Ih-Kr4" secondAttribute="leadingMargin" constant="31" id="ab0-SJ-QQh">
-                                                    <variation key="widthClass=compact" constant="10"/>
-                                                </constraint>
-                                                <constraint firstAttribute="centerY" secondItem="qaE-42-rTG" secondAttribute="centerY" id="iHJ-rP-QJb"/>
-                                                <constraint firstAttribute="centerX" secondItem="qaE-42-rTG" secondAttribute="centerX" id="jTn-EB-9XH"/>
+                                                <constraint firstAttribute="centerY" secondItem="qaE-42-rTG" secondAttribute="centerY" constant="0.25" id="tCS-eu-7xD"/>
+                                                <constraint firstItem="qaE-42-rTG" firstAttribute="leading" secondItem="4w3-Ih-Kr4" secondAttribute="leadingMargin" constant="11" id="uXh-fO-oez"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="ONX-PE-6tc"/>
-                                                    <exclude reference="ab0-SJ-QQh"/>
-                                                    <exclude reference="iHJ-rP-QJb"/>
-                                                    <exclude reference="jTn-EB-9XH"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="widthClass=compact">
-                                                <mask key="constraints">
-                                                    <include reference="ONX-PE-6tc"/>
-                                                    <include reference="ab0-SJ-QQh"/>
-                                                    <exclude reference="iHJ-rP-QJb"/>
-                                                    <exclude reference="jTn-EB-9XH"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="AwJ-Vf-4ol">
@@ -1280,8 +1252,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7k-Fn-zhE">
-                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <rect key="frame" x="20" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1324,8 +1296,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2FS-Bp-V8X">
-                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <rect key="frame" x="20" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1368,8 +1340,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjP-cj-Ata">
-                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <rect key="frame" x="20" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1414,8 +1386,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImF-oK-SJS">
-                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <rect key="frame" x="20" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1458,8 +1430,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exV-pz-diQ">
-                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <rect key="frame" x="20" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
