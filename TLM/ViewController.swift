@@ -67,9 +67,9 @@ class ViewController: UIViewController {
 // Player Data
 
   let playersNamesData = [
-    "Abhishek Singh", "Blas Mazzeo",   "Brian Lee",    "Gary Chamberlain",
-    "Jose Alamillo",  "Kevin Capen",   "Matt DeCelle", "Michael Wronski",
-    "Ricardo Diaz",   "Steve Sylvers", "Steven Louie", "Tony Morro" ]
+    "Blas Mazzeo",     "Brian Lee",     "Eric Loose",    "Gary Chamberlain",
+    "Jason Mayling",   "Jose Alamillo", "Kevin Capen",   "Matt DeCelle",
+    "Michael Wronski", "Ricardo Diaz",  "Steve Sylvers", "Tony Morro" ]
 
   var playersNames = Array(count: 12, repeatedValue: String())  // sorted array of names
 
@@ -81,24 +81,21 @@ class ViewController: UIViewController {
 
 // Player Draw Order
 
+//let playerDrawOrder = [1, 6, 3, 8, 12, 2, 10, 5, 11, 9, 7, 4]  // Jun-Aug 2015
 //let playerDrawOrder = [7, 2, 8, 11, 3, 9, 6, 12, 1, 10, 4, 5]  // Apr-Jun 2015
-  var playerDrawOrder = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]  // debug 1st Week
+  var playerDrawOrder = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]  // debug order
   
 // Week Data
   
-  var holidayWeeklyOffset = [0, 0 ,0 ,0 ,0 ,0 ,7]
+  let firstPlayDate = "Jun 22"  // Jun-Aug 2015
+  var holidayWeeklyOffset = [0, 0 ,0 ,0 ,0 ,0 ,0]
 
-//let firstPlayDate = "Jun 22"  // Jun-Aug 2015
-  let firstPlayDate = "Apr 13"  // Apr-Jun 2015
-  
   var weekDateData = Array(count: 7, repeatedValue: String())
 
 // ........................................................................
 
   override func viewDidLoad() {
-
     super.viewDidLoad()
-    
   }
   
   func loadMyAppStartView() {
@@ -152,26 +149,22 @@ class ViewController: UIViewController {
     matchDates(firstPlayDate)
     
     allWeekButtons.extend([buttonW1, buttonW2, buttonW3,
-      buttonW4, buttonW5, buttonW6, buttonW7])
+                           buttonW4, buttonW5, buttonW6, buttonW7])
     
     for button in allWeekButtons {
       button.setTitle(weekDateData[button.tag], forState: UIControlState.Normal)
-//      button.layer.cornerRadius = 15
-//      button.layer.borderWidth = 1
     }
     
     // create player button array and change titles to players names
     
     allPlayerButtons.extend([buttonP1, buttonP2,  buttonP3,  buttonP4,
-      buttonP5, buttonP6,  buttonP7,  buttonP8,
-      buttonP9, buttonP10, buttonP11, buttonP12])
+                             buttonP5, buttonP6,  buttonP7,  buttonP8,
+                             buttonP9, buttonP10, buttonP11, buttonP12])
     
     for button in allPlayerButtons {
 //    var newTitle = "\(playerDrawOrder[button.tag])" + " " + playersNamesData[button.tag]
 //    button.setTitle(newTitle, forState: UIControlState.Normal)
       button.setTitle(playersNamesData[button.tag], forState: UIControlState.Normal)
-//      button.layer.cornerRadius = 15
-//      button.layer.borderWidth = 1
     }
     
     // create re-orderd player list based on player draw order
